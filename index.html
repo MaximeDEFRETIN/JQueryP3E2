@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 2</title>
+</head>
+<body>
+  <input type="text" value="0" id="texte">
+  <input type="button" id="boutonp" value="+">
+  <input type="button" id="boutonn" value="-">
+  <script>
+  $('#boutonp').click(function() {
+    var number = parseInt($('#texte').val()) + 1;
+    $('#texte').val(number);
+  });
+  $('#boutonn').click(function() {
+    var number = parseInt($('#texte').val()) - 1;
+    $('#texte').val(number);
+  });
+  </script>
+</body>
+</html>
