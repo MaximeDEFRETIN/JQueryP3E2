@@ -10,6 +10,7 @@
   <input type="button" id="boutonp" value="+">
   <input type="button" id="boutonn" value="-">
   <script>
+$(function(){
   $('#boutonp').click(function() {
     var number = parseInt($('#texte').val()) + 1;
     $('#texte').val(number);
@@ -17,6 +18,7 @@
   $('#boutonn').click(function() {
     var number = parseInt($('#texte').val()) - 1;
     $('#texte').val(number);
+  });
   });
   </script>
 </body>
